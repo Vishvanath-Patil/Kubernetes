@@ -10,10 +10,8 @@
 ``` shell
 sudo apt-get update
 sudo apt install docker.io
-sudo su -
 sudo chown $USER /var/run/docker.sock
 sudo usermod -aG docker $USER
-exit
 systemctl status docker
 docker ps
 ```
