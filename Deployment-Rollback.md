@@ -65,9 +65,9 @@ kubectl rollout history deployment mydeployment
 ```shell
 kubectl rollout undo deployment
 ```
-# failed Deployment
+# Failed Deployment Possible Reasons 
 
-your deployment may get stuck trying to deploy its newest ReplicaSet without ever Completing This can Occur Due to Some of the following factors.
+Your deployment may get stuck trying to deploy its newest ReplicaSet without ever Completing This can Occur Due to Some of the following factors.
 
 1. Insufficient Quota
 2. Readiness probe error
