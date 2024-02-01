@@ -1,6 +1,6 @@
 # Deployment & Rollback
 
-## The following air typical use cases of deployments.-
+## The following are typical use cases of deployments.-
 
 1. Create a deployment to rule out a replica set The replica set creates pod in the background. Check the status of the rollout to see if it succeed or not.
 
