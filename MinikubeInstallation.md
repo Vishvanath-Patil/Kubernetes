@@ -50,6 +50,12 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 ``` shell
 minikube start - vm-driver=virtualbox
 ```
+# OR
+
+### if you used Docker as the VM driver:
+``` shell
+minikube start - vm-driver=none
+```
 ### 2. Confirm the status of your Minikube cluster:
 ``` shell
 minikube status
