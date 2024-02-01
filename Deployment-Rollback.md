@@ -73,7 +73,7 @@ your deployment may get stuck trying to deploy its newest ReplicaSet without eve
 
 # Deployment YAML File
 ## mydeployment.yaml
-
+```shell
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -93,3 +93,4 @@ spec:
         - name: c00
           image: ubuntu
           command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5; done"]
+```
