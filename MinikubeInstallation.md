@@ -1,8 +1,10 @@
 # Minikube Installation on Ubuntu 22.04 LTS (EC2)
 ## Pre-Requites 
 1. Choose Ubuntu 22.04 LTS ( t2.medium ) because min 2 CPU and 4 GB Memory and 20GB Free Disk Space
-3. Docker Installation
-2. Kubectl
+2. Docker or VirtualBox
+3. curl
+4. Kubectl
+   
 
 ## Docker Installation
 ``` shell
