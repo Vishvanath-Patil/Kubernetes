@@ -10,10 +10,12 @@
 ``` shell
 sudo apt-get update
 sudo apt install docker.io
-docker ps
+sudo su -
 sudo chown $USER /var/run/docker.sock
 sudo usermod -aG docker $USER
-sudo systemctl status docker
+exit
+systemctl status docker
+docker ps
 ```
 
 ## Ensure that curl is also installed:
