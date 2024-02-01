@@ -6,7 +6,7 @@
 4. Kubectl
    
 
-## Docker Installation (Optional)
+## Docker Installation 
 ``` shell
 sudo apt-get update
 sudo apt install docker.io
