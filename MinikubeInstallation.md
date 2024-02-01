@@ -5,6 +5,7 @@
 3. curl
 4. Kubectl
    
+   
 
 ## Docker Installation 
 ``` shell
@@ -28,7 +29,10 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
 ```
-
+## Install conntrack utility
+```bash
+sudo apt install conntrack
+```
 # Installing Minikube:
 ## Step 1: Install VirtualBox (if not already installed)
 ``` shell
