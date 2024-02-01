@@ -23,3 +23,15 @@ for Ex-> kubectl rollout undo deploy/mydeployments --to-revision
 ## Note: That the name of the Replicaset
 is always formatted as [Deployment-name]-[Random string]
 kubectl get deploy
+
+## when you inspect the deployment in your cluster the following field are display
+
+NAME --> List the names of the deployments in the namespace
+
+READY --> Display how many replicas of the application are available to your users if follows the pattern ready/Desired
+
+UP-TO-DATE --> Display the number of replicas that have been updated to achieve the desired state.
+
+AVAILABLE --> Displays how many replicas of the application are available of your users
+
+AGE --> Display the amount of time that the application has been Running.
