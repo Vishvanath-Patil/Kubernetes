@@ -24,7 +24,7 @@ for Ex-> kubectl rollout undo deploy/mydeployments --to-revision
 ```shell
 kubectl get deploy
 ```
-## when you inspect the deployment in your cluster the following field are display
+## When you inspect the deployment in your cluster the following field are display
 
 NAME --> List the names of the deployments in the namespace
 
