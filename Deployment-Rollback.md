@@ -35,3 +35,38 @@ UP-TO-DATE --> Display the number of replicas that have been updated to achieve 
 AVAILABLE --> Displays how many replicas of the application are available of your users
 
 AGE --> Display the amount of time that the application has been Running.
+
+To check deployment was created or not
+
+kubectl get deployment
+
+To check how deplooyment creates RS and pod
+
+kubectl describe deploy mydeployment
+
+kubectl get rs
+
+To Scale up or Scale down
+
+kubectl scale --replicas=1 deployment mydeployment
+
+To Check what is running inside container or logs 
+
+kubectl logs <POD_NAME>
+
+kubectl rollout status deployment mydeployment
+
+kubectl rollout history deployment mydeployment
+
+kubectl rollout undo deployment
+
+# failed Deployment
+
+your deployment may get stuck trying to deploy its newest ReplicaSet without ever Completing This can Occur Due to Some of the following factors.
+
+1. Insufficient Quota
+2. Readiness probe error
+3. Image pull error
+4. Insufficient permission
+5. Limit Ranges
+6. Application runtime misconfiguration
