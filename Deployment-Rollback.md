@@ -20,7 +20,7 @@
 
 for Ex-> kubectl rollout undo deploy/mydeployments --to-revision
 
-### Note: That the name of the Replicaset is always formatted as [Deployment-name]-[Random string]
+#### Note: That the name of the Replicaset is always formatted as [Deployment-name]-[Random string]
 ```shell
 kubectl get deploy
 ```
