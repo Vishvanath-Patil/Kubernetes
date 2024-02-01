@@ -50,7 +50,7 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 ``` shell
 minikube start - vm-driver=virtualbox
 ```
-# OR
+# If you used docker
 
 ### if you used Docker as the VM driver:
 ``` shell
