@@ -22,8 +22,9 @@ for Ex-> kubectl rollout undo deploy/mydeployments --to-revision
 
 ## Note: That the name of the Replicaset
 is always formatted as [Deployment-name]-[Random string]
+```shell
 kubectl get deploy
-
+```
 ## when you inspect the deployment in your cluster the following field are display
 
 NAME --> List the names of the deployments in the namespace
@@ -37,29 +38,33 @@ AVAILABLE --> Displays how many replicas of the application are available of you
 AGE --> Display the amount of time that the application has been Running.
 
 To check deployment was created or not
-
+```shell
 kubectl get deployment
-
+```
 To check how deplooyment creates RS and pod
-
+```shell
 kubectl describe deploy mydeployment
-
+```
+```shell
 kubectl get rs
-
+```
 To Scale up or Scale down
-
+```shell
 kubectl scale --replicas=1 deployment mydeployment
-
+```
 To Check what is running inside container or logs 
-
+```shell
 kubectl logs <POD_NAME>
-
+```
+```shell
 kubectl rollout status deployment mydeployment
-
+```
+```shell
 kubectl rollout history deployment mydeployment
-
+```
+```shell
 kubectl rollout undo deployment
-
+```
 # failed Deployment
 
 your deployment may get stuck trying to deploy its newest ReplicaSet without ever Completing This can Occur Due to Some of the following factors.
@@ -72,7 +77,9 @@ your deployment may get stuck trying to deploy its newest ReplicaSet without eve
 6. Application runtime misconfiguration
 
 # Deployment YAML File
-## mydeployment.yaml
+```shell
+mydeployment.yaml
+```
 ```shell
 kind: Deployment
 apiVersion: apps/v1
