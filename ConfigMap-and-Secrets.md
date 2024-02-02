@@ -126,8 +126,9 @@ Secrets provide you with a mechanism to use such information in a safe and relia
    kubectl describe secret <SECRET-NAME>
    ```
    ### deploysecret.yml
-   ```shell
-   apiVersion: v1
+   
+```shell
+apiVersion: v1
 kind: Pod
 metadata:
   name: myvolsecret
@@ -143,7 +144,7 @@ spec:
   - name: testsecret
     secret:
        secretName: mysecret
-    ```
+```
 ```shell
 kubectl get pods
 ```
