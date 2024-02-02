@@ -20,7 +20,10 @@ Login to `c00` Container
 ```shell
 kubectl exec testpod -it -c c00 -- /bin/bash
 ```
+Run commads inside container
 ```shell
 apt update && apt install curl
 ```
-
+```shell
+curl localhost:80
+```
