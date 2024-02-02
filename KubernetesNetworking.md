@@ -98,3 +98,22 @@ curl 10.0.8.99:80
 6. The virtual ip is not an actual ip connect to the network. Interface, but its purpose is to purely forward traffic to the one or more pods.
 
 7. kube-Proxy is the one which keeps the mapping between the virtual IP and the parts up to date, which queries the api servers to learn about new services in the cluster.
+Although each pod has unique ip address. Those ips are not exposed outside the cluster.
+Services helps to expose the virtual IP map to the pods and allows application to receive traffic.
+
+Labels are used to select which air the pods to be put under the surface.
+
+Creating a service will create an endpoint to access the pods. Replication in it.
+
+Services can be exposed in different ways by specifying a type in the service spec
+
+1. ClusterIP
+2. NodePort
+3. LoadBalancer - Created by cloud provider that will route external traffic to every node on the node port (eg : ELB on AWS)
+
+
+Headless--> Creates several endpoints that are used to Phudos DNS Records. Each dns record is bound to a pod.
+
+By default service can only run between ports. 3000 to 32767
+
+The set of pods targeted by services is usually determined by the selector.
