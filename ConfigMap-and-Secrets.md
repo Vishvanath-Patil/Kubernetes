@@ -116,6 +116,6 @@ Secrets provide you with a mechanism to use such information in a safe and relia
    ```
    #### Create Secret
    ```shell
-   kubectl create secret generic mysecret --from-file:username.txt --from-file:password.txt
+   kubectl create secret generic mysecret --from-file=username.txt --from-file=password.txt
    ```
    
