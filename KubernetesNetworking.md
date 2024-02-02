@@ -45,7 +45,7 @@ pod1-nginx.yaml //installed nginx
 kind: Pod
 apiVersion: v1
 metadata:
-  name: httpdpod1
+  name: nginx
 spec:
   containers:
     - name: c01
@@ -53,17 +53,29 @@ spec:
       ports:
         - containerPort: 80
 ```
+```shell
+kubectl apply -f nginx.yaml
+```
 ## pod2-https.yaml
 
 ```shell
 kind: Pod
 apiVersion: v1
 metadata:
-  name: httpdpod1
+  name: httpd
 spec:
   containers:
     - name: c01
       image: httpd
       ports:
         - containerPort: 80
+```
+```shell
+kubectl apply -f nginx.yaml
+```
+```shell
+kubectl get pods
+```
+```shell
+kubectl get pods -o wide
 ```
