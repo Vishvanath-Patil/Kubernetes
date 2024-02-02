@@ -16,3 +16,11 @@ spec:
       ports:
        - containerPort: 80
 ```
+Login to `c00` Container
+```shell
+kubectl exec testpod -it -c c00 -- /bin/bash
+```
+```shell
+apt update && apt install curl
+```
+
