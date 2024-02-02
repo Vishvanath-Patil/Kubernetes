@@ -108,3 +108,14 @@ Secrets provide you with a mechanism to use such information in a safe and relia
 ## Secrets can be created.
 1. From a text file.
 2. From a yaml file.
+
+   ### Steps Create Secrets
+   #### Create files in local system (worker-node)
+   ```shell
+   echo "root" > username.txt ; echo "mypassword123" > password.txt
+   ```
+   #### Create Secret
+   ```shell
+   kubectl create secret generic mysecret --from-file:username.txt --from-file:password.txt
+   ```
+   
