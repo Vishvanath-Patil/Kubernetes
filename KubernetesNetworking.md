@@ -117,3 +117,9 @@ Headless--> Creates several endpoints that are used to Phudos DNS Records. Each 
 By default service can only run between ports. 3000 to 32767
 
 The set of pods targeted by services is usually determined by the selector.
+
+# NodePort
+Makes a service accessable from Outside the Cluster
+Exposes the Service on the Samr Port of each selected node in the Cluster using NAT
+
+
