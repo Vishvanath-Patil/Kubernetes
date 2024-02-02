@@ -18,6 +18,17 @@ Configmap can be accessed In two ways.:-
 1. As environment variable.
 2. As volume in the Pod
 
+   Steps to Create ConfigMap
+   ### Step 1:
+   #### create sample.conf
+   ```shell
+   vi sample.conf
+   ```
+   ### Step 2:
+   ```shell
+   kubectl create configmap mymap --from-file=sample.conf
+   ```
+
 SECRETS
 =======
 You don't want sensitive information such as database password or in api key kept around in. clear test.
