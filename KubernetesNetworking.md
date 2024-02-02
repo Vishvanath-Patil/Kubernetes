@@ -48,9 +48,9 @@ metadata:
   name: nginxpod
 spec:
   containers:
-    - name: c00
+    - name: c01
       image: nginx
-      command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5 ; done"]
+      Ports:
        - containerPort: 80
 ```
 ## pod2-https.yaml
@@ -62,8 +62,8 @@ metadata:
   name: httpdpod
 spec:
   containers:
-    - name: c00
+    - name: c01
       image: httpd
-      command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5 ; done"]
+      Ports:
        - containerPort: 80
 ```
