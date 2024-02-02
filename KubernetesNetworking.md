@@ -45,13 +45,13 @@ pod1-nginx.yaml //installed nginx
 kind: Pod
 apiVersion: v1
 metadata:
-  name: nginxpod
+  name: httpdpod1
 spec:
   containers:
     - name: c01
       image: nginx
-      Ports:
-       - containerPort: 80
+      ports:
+        - containerPort: 80
 ```
 ## pod2-https.yaml
 
@@ -59,11 +59,11 @@ spec:
 kind: Pod
 apiVersion: v1
 metadata:
-  name: httpdpod
+  name: httpdpod1
 spec:
   containers:
     - name: c01
       image: httpd
-      Ports:
-       - containerPort: 80
+      ports:
+        - containerPort: 80
 ```
