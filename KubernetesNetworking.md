@@ -27,3 +27,7 @@ apt update && apt install curl
 ```shell
 curl localhost:80
 ```
+Delete pod.yaml
+```shell
+kubectl delete -f pod.yaml
+```
