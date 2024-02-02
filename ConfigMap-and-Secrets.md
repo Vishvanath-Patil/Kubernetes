@@ -28,7 +28,38 @@ Configmap can be accessed In two ways.:-
    ```shell
    kubectl create configmap mymap --from-file=sample.conf
    ```
-
+   #### depploymentconfigmap.yml
+   ```shell
+   apiVersion: v1
+kind: Pod
+metadata:
+  name: myvolconfig
+spec:
+  containers:
+  - name: c1
+    image: centos
+    command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
+    volumeMounts:
+      - name: testconfigmap
+        mountPath: "/tmp/config"   # the config files will be mounted as ReadOnly by default here
+  volumes:
+  - name: testconfigmap
+    configMap:
+       name: mymap   # this should match the config map name created in the first step
+       items:
+       - key: sample.conf
+         path: sample.conf
+```
+```shell
+kubectl get pods
+```
+```shell
+kubectl apply -f deploymentconfig.yml
+```
+Login to container
+```shell
+kubectl exec <PODNAME> -it /bin/bash
+```
 SECRETS
 =======
 You don't want sensitive information such as database password or in api key kept around in. clear test.
