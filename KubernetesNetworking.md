@@ -37,3 +37,33 @@ Delete pod.yaml
 ```shell
 kubectl delete -f pod.yaml
 ```
+## Communication Different Pods within Cluster
+1. Pod to Pod Communication on same worker node happens through Pod IP
+2. By Default Pod's IP will not be accessable Outside the node.
+pod1-nginx.yaml //installed nginx
+```shell
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginxpod
+spec:
+  containers:
+    - name: c00
+      image: nginx
+      command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5 ; done"]
+       - containerPort: 80
+```
+## pod2-https.yaml
+
+```shell
+kind: Pod
+apiVersion: v1
+metadata:
+  name: httpdpod
+spec:
+  containers:
+    - name: c00
+      image: httpd
+      command: ["/bin/bash", "-c", "while true; do echo Hello-Bhupinder; sleep 5 ; done"]
+       - containerPort: 80
+```
