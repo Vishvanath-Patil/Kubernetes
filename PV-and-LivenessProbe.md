@@ -40,3 +40,86 @@ These are Some Restictions:
 2.Those instance need to be in the same region and avilability Zine as the EBS Volume.
 
 3.EBS Only supports a single EC2 instance mouting a Volume.
+# Lab
+## Here used AWS EBS Volume which `volumeID` Copied to PV.yml file
+pv.yml
+```shell
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: myebsvol
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Recycle
+  awsElasticBlockStore:
+    volumeID:           # YAHAN APNI EBS VOLUME ID DAALO
+    fsType: ext4
+```
+```shell
+kubectl apply -f pvc.yml
+```
+```shell
+kubectl get pv
+```
+```shell
+kubectl get pods
+```
+# Persistance Volume Claim
+## pvc.yml
+```shell
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: myebsvolclaim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+```shell
+kubectl apply -f pvc.yml
+```
+# Deploymentpvc.yml
+```shell
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: myebsvolclaim
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+```shell
+kubectl apply -f Deploymentpvc.yml
+```
+## Task
+```shell
+kubectl get pods
+```
+## Login to ubuntu Container
+```shell
+kubectl exec <PODNAME> -it -- /bin/bash 
+```
+## Create Directory on container
+```shell
+cd /tmp/persistant
+```
+vi testfile
+add some content
+Esc + wq:
+```shell
+kubectl delete pod <PODNAME>
+```
+Login to new pod check the tmp/persistant data
+
+
+
+
