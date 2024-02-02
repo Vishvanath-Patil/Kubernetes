@@ -60,6 +60,40 @@ Login to container
 ```shell
 kubectl exec <PODNAME> -it /bin/bash
 ```
+### ConfigMap Accessing though Environment Variable
+```shell
+kubectl apply -f deployenv.yml
+```
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myenvconfig
+spec:
+  containers:
+  - name: c1
+    image: centos
+    command: ["/bin/bash", "-c", "while true; do echo Technical-Guftgu; sleep 5 ; done"]
+    env:
+    - name: MYENV         # env name in which value of the key is stored
+      valueFrom:
+        configMapKeyRef:
+          name: mymap      # name of the config created
+          key: sample.conf            
+```
+```shell
+kubectl get pods
+```
+```shell
+kubectl exec <PODNAME> -it -- /bin/bash
+```
+```shell
+env
+```
+```shell
+echo $MYENV
+```
+
 SECRETS
 =======
 You don't want sensitive information such as database password or in api key kept around in. clear test.
