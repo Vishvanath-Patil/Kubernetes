@@ -29,8 +29,8 @@ Configmap can be accessed In two ways.:-
    kubectl create configmap mymap --from-file=sample.conf
    ```
    #### depploymentconfigmap.yml
-   ```shell
-   apiVersion: v1
+```shell
+apiVersion: v1
 kind: Pod
 metadata:
   name: myvolconfig
