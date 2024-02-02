@@ -118,4 +118,38 @@ Secrets provide you with a mechanism to use such information in a safe and relia
    ```shell
    kubectl create secret generic mysecret --from-file=username.txt --from-file=password.txt
    ```
-   
+   ```shell
+   kubectl get secret
+   ```
+   ```shell
+   kubectl describe secret <SECRET-NAME>
+   ```
+   ### deploysecret.yml
+   ```shell
+   apiVersion: v1
+kind: Pod
+metadata:
+  name: myvolsecret
+spec:
+  containers:
+  - name: c1
+    image: centos
+    command: ["/bin/bash", "-c", "while true; do echo Technical-guftgu; sleep 5 ; done"]
+    volumeMounts:
+      - name: testsecret
+        mountPath: "/tmp/mysecrets"   # the secret files will be mounted as ReadOnly by default here
+  volumes:
+  - name: testsecret
+    secret:
+       secretName: mysecret
+    ```
+```shell
+kubectl get pods
+```
+```shell
+kubectl exec <POD-NAME> -it -- /bin/bash
+```
+```shell
+cd tmp
+```
+
