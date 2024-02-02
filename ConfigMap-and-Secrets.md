@@ -50,6 +50,7 @@ spec:
        - key: sample.conf
          path: sample.conf
 ```
+
 ```shell
 kubectl get pods
 ```
