@@ -85,16 +85,16 @@ curl 10.0.8.99:80
 
 # Object - Services 
 
-When using RC spots air terminated and created during scaling or replication operations.
+1. When using RC spots air terminated and created during scaling or replication operations.
 
-When using deployments while updating the image version, the pods are terminated and new parts take the place of the other pods.
+2. When using deployments while updating the image version, the pods are terminated and new parts take the place of the other pods.
 
-Pods are very dynamic. They come and go on the Kubernetes cluster and on any of the available nodes. And it would be difficult to access the parts as the pod ip change once it is recreated.
+3. Pods are very dynamic. They come and go on the Kubernetes cluster and on any of the available nodes. And it would be difficult to access the parts as the pod ip change once it is recreated.
 
-Survey subject is an logical breeds between pods and end users. Which provides virtual IP?
+4. Survey subject is an logical breeds between pods and end users. Which provides virtual IP?
 
-Service allows client to reliably connect to the containers using in the pod, using the virtual ip.
+5. Service allows client to reliably connect to the containers using in the pod, using the virtual ip.
 
-The virtual ip is not an actual ip connect to the network. Interface, but its purpose is to purely forward traffic to the one or more pods.
+6. The virtual ip is not an actual ip connect to the network. Interface, but its purpose is to purely forward traffic to the one or more pods.
 
-kube-Proxy is the one which keeps the mapping between the virtual IP and the parts up to date, which queries the api servers to learn about new services in the cluster.
+7. kube-Proxy is the one which keeps the mapping between the virtual IP and the parts up to date, which queries the api servers to learn about new services in the cluster.
