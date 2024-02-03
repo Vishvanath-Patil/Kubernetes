@@ -46,7 +46,72 @@ Horizontal Pod Autoscaler
 Colddown period to wait before another Downscale. operation can be performed is controlled by --horizontal-pod-autoscalar-downtime stabilization flag (Default Value of 5min)
 
 Metric server needs to be deployed in the cluster to provide metrics, via The resources matrics API.
-
+```shell
 --kubelet--insecure-tls
-
+```
+```shell
 kubelet autoscale deployment mydeploy --cpu-percent=20 --min=1 --max=10
+```
+```shell
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: mem-min-max-demo-lr
+spec:
+  limits:
+  - max:
+      memory: 1Gi
+    min:
+      memory: 500Mi
+    type: Container
+```
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: constraints-mem-demo
+spec:
+  containers:
+  - name: constraints-mem-demo-ctr
+    image: nginx
+    resources:
+      limits:
+        memory: "800Mi"
+      requests:
+        memory: "600Mi"
+```
+
+- If request is not specified & limit is given, then request = limit
+```shell
+wget https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml -O metrics-server.yaml
+```
+```shell
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: mydeploy
+spec:
+   replicas: 1
+   selector:
+    matchLabels:
+     name: deployment
+   template:
+     metadata:
+       name: testpod8
+       labels:
+         name: deployment
+     spec:
+      containers:
+        - name: c00
+          image: httpd
+          ports:
+          - containerPort: 80
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
+```
+```shell
+kubectl autoscale deployment mydeploy --cpu-percent=20 --min=1 --max=10
+```
