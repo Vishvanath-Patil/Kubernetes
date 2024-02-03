@@ -5,6 +5,10 @@
 
 ![image](https://github.com/Vishvanath-Patil/Kubernetes/assets/130968991/79a7f9e0-d9a6-45af-8a4f-bc102e540046)
 
+## Path Based Routing :-
+![image](https://github.com/Vishvanath-Patil/Kubernetes/assets/130968991/67c66937-3d73-4cc5-a6b1-669d277dfe7a)
+
+
 
 # Ingress
 API Object in kubernetes
