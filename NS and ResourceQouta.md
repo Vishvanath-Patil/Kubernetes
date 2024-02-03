@@ -102,9 +102,9 @@ kubectl config view | grep namespace
 
 3. CPU values are specified in Milli CPU and memory in MiB.
 
-A Kubernetes cluster can be divided into namespaces if a pod is created in a namespace that has a default cpu limit and the container does not specify its own cpu limit, then the container is assigned the default CPU limit.
+4. A Kubernetes cluster can be divided into namespaces if a pod is created in a namespace that has a default cpu limit and the container does not specify its own cpu limit, then the container is assigned the default CPU limit.
 
-Namespaces can be assigned resources quota objects. This will limit the amount of usage allowed to the objects in that namespaces.
+5. Namespaces can be assigned resources quota objects. This will limit the amount of usage allowed to the objects in that namespaces.
 
 ### You Can Limit
 
@@ -114,6 +114,6 @@ Namespaces can be assigned resources quota objects. This will limit the amount o
 
 ## Here, are two restrictions that a resource quota Imposes on a namespaces.
 
-Every container that runs in a namespaces must have. its own CPU limit.
+1. Every container that runs in a namespaces must have. its own CPU limit.
 
-The total amount of CPU used by all containers in the namespace must not Exceed a specified limit.
+2. The total amount of CPU used by all containers in the namespace must not Exceed a specified limit.
