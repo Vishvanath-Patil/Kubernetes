@@ -44,3 +44,13 @@ kubectl create namespace PPE-Stage
 ```shell
 kubectl get pods -n <NamespaceName>
 ```
+## Creating ns using yaml file
+`vi devns.yml`
+```shell
+apiVersion: v1
+kind: Namespace
+metadata:
+   name: dev
+   labels:
+     name: dev
+```
