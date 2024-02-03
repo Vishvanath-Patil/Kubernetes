@@ -79,3 +79,7 @@ kubectl get pods -n dev
 ```shell
 kubectl config set-context $(kubectl config current-context) --namespace=dev
 ```
+### kubeconfig view 
+```shell
+kubectl config view | grep namespace
+```
