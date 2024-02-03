@@ -85,6 +85,8 @@ spec:
 ```shell
 wget https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml -O metrics-server.yaml
 ```
+`deployhpa.yml`
+
 ```shell
 kind: Deployment
 apiVersion: apps/v1
