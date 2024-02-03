@@ -83,3 +83,21 @@ kubectl config set-context $(kubectl config current-context) --namespace=dev
 ```shell
 kubectl config view | grep namespace
 ```
+# Resource Qouta 
+## Managing Compute Resources for containers.
+
+1. A pod in Kubernetes will run with no limits on CPU and memory.
+
+2. You can optionally specify how much CPU and Memory(RAM) each container needs.
+
+3. Scheduler decides about which nodes to place pod, only if the Node has enough CPU Resources available to specify the Pod CPU request.
+
+4. CPU is specified in units of Cores and memory is specified in units of bytes.
+
+## Two types of container can be set for each resource type -request limit.
+
+1. A request is the amount of that resources the system will guarantee for the container and Kubernetes will use this value to decide on which node to place the pod.
+
+2. A limit is the maximum amount of resources that kubernetes will allow the container to use in the case that request is not set for container. It default to limits. if limit is not set, then if default to zero.
+
+3. CPU values are specified in Milli CPU and memory in MiB.
