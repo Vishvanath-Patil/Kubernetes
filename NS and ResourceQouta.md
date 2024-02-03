@@ -67,4 +67,15 @@ spec:
       image: ubuntu              
       command: ["/bin/bash", "-c", "while true; do echo Technical Guftgu; sleep 5 ; done"]
   restartPolicy: Never
-```     
+```
+### Create a pod inside dev namespace   
+```shell
+kubectl apply -f pod.yml -n dev
+```
+```shell
+kubectl get pods -n dev
+```
+### Set context for namespace
+```shell
+kubectl config set-context $(kubectl config current-context) --namespace=dev
+```
