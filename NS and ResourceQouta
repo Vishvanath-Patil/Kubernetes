@@ -23,4 +23,7 @@ Let us assume we have said coverage cluster for dev and production. Use class.
 The dev team would like. to maintain a space in the cluster where they can get a view on the list of parts services and deployments they use to build and run their application in this. no restrictions airport on who can or cannot modify resources to enable assail deployment.
 For prod team, we can enforce strict procedures on who can or cannot manipulate the set of parts services and deployments.
 
-kubectl get pods -n prod
+```shell
+kubectl get pods 
+```
+
