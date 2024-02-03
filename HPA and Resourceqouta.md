@@ -1,8 +1,8 @@
 # Default range Resource Allocation Per Container
-min cpu limit = 0.5
+min cpu request = 0.5
 max CPU limit = 1
 
-min memory limit = 512miB
+min memory request = 512miB
 max Memory Limit = 1GB
 
 you can define 
