@@ -6,7 +6,7 @@
 
 3. Kubernetes namespace helps different project. teams are customer to share a covernet's cluster and provides.
 
-## A scope of every names.
+## A scope of every namespace.
 
 1. A mechanism to. attach authorization and policy To subsection of the cluster.
 
@@ -22,8 +22,25 @@ Namespaces air intended for. use in environment with many uses spread across mul
 Let us assume we have said coverage cluster for dev and production. Use class.
 The dev team would like. to maintain a space in the cluster where they can get a view on the list of parts services and deployments they use to build and run their application in this. no restrictions airport on who can or cannot modify resources to enable assail deployment.
 For prod team, we can enforce strict procedures on who can or cannot manipulate the set of parts services and deployments.
-
+### Command to list namespaces
+```shell
+kubectl get ns
+```
+## Command fetch pods from default namespace
 ```shell
 kubectl get pods 
 ```
-
+## Command to Create Namespace
+```shell
+kubectl create namespace <Namespace-Name>
+```
+```shell
+kubectl create nampespace Dev
+```
+```shell
+kubectl create namespace PPE-Stage
+```
+## Command to fetch pods from specific namespace i.e Dev, Prod, PPE-Stage
+```shell
+kubectl get pods -n <NamespaceName>
+```
