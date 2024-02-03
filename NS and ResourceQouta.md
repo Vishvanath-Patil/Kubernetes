@@ -193,4 +193,47 @@ kubectl get rs
 ```shell
 kubectl describe rs <rs-Name>
 ```
+`cpu-limit-range.yml`
+```shell
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: cpu-limit-range
+spec:
+  limits:
+  - default:
+      cpu: 1
+    defaultRequest:
+      cpu: 0.5
+    type: Container
+```
+`cpu2.yml`
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: default-cpu-demo-2
+spec:
+  containers:
+  - name: default-cpu-demo-2-ctr
+    image: nginx
+    resources:
+      limits:
+        cpu: "1"
+```
+`default-cpu.yml`
+```shell
+apiVersion: v1
+kind: Pod
+metadata:
+  name: default-cpu-demo-3
+spec:
+  containers:
+  - name: default-cpu-demo-3-ctr
+    image: nginx
+    resources:
+      requests:
+        cpu: "0.75"
+```
+
 
