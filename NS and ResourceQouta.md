@@ -101,3 +101,19 @@ kubectl config view | grep namespace
 2. A limit is the maximum amount of resources that kubernetes will allow the container to use in the case that request is not set for container. It default to limits. if limit is not set, then if default to zero.
 
 3. CPU values are specified in Milli CPU and memory in MiB.
+
+A Kubernetes cluster can be divided into namespaces if a pod is created in a namespace that has a default cpu limit and the container does not specify its own cpu limit, then the container is assigned the default CPU limit.
+
+Namespaces can be assigned resources quota objects. This will limit the amount of usage allowed to the objects in that namespaces.
+
+### You Can Limit
+
+1. Compute
+2. Memory
+3. Storage
+
+## Here, are two restrictions that a resource quota Imposes on a namespaces.
+
+Every container that runs in a namespaces must have. its own CPU limit.
+
+The total amount of CPU used by all containers in the namespace must not Exceed a specified limit.
