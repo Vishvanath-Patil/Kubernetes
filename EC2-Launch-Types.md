@@ -41,9 +41,11 @@ By committing to a one- or three-year term, the company receives a substantial d
 This results in significant cost savings for the company over the reserved term.
 
 ## Benefits of Reserved Instances:
-#**Cost Savings:** RIs offer a cost-effective solution, providing savings of up to 75% compared to on-demand instances.
-#**Predictability:** For workloads with predictable usage, RIs allow companies to plan and budget more effectively.
-#**Capacity Assurance:** RIs provide assurance that the reserved capacity will be available, even during peak times.
+**Cost Savings:** RIs offer a cost-effective solution, providing savings of up to 75% compared to on-demand instances.
+
+**Predictability:** For workloads with predictable usage, RIs allow companies to plan and budget more effectively.
+
+**Capacity Assurance:** RIs provide assurance that the reserved capacity will be available, even during peak times.
 
 It's important to note that Reserved Instances are best suited for predictable workloads with long-term commitments. 
 If the workload is variable or if there are uncertainties in usage, other purchasing options like on-demand or spot instances might be more appropriate. 
