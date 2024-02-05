@@ -15,7 +15,7 @@ The instance types can be devided into following :
 5. Accelerated computing
 6. HPC Optimized
 
-## 1. Generaal Purpose Instances ( Balance of Compute(CPU), Memory and Network ) Basically m family
+## 1. General Purpose Instances ( Balance of Compute(CPU), Memory and Network ) Basically m family
 General purpose instances provides a balance of **compute**, **memory** and **networking** resources and can be used for a variety of diverse workloads.
 
 • These instances are ideal for applications that use these resources in equal proportions such as **web-servers** and **code repositories**.
