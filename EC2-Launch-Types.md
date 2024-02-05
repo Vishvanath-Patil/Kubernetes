@@ -150,7 +150,10 @@ Consider a financial institution that is subject to strict regulatory compliance
 
 While Dedicated Hosts offer strong isolation and control, they might not be necessary for all workloads. They are typically chosen in scenarios where regulatory compliance or specific licensing requirements necessitate the use of dedicated physical hardware.
 
-
+## Dedicated Instances
+1. Hardware that is Dedicated to launch only your instances
+2. You cannot control it like you do in Dedicated Host
+   Use case will be same as Dedicated Host.
 
 
 
