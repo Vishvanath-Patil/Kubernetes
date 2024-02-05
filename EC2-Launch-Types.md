@@ -11,7 +11,7 @@
 ## Use cases: 
 short-term, irregular workloads that cannot be interrupted
 -----------------Senario-------------------
-Example:
+## Example:
 
 Imagine a startup company that is in the early stages of developing and testing a new mobile application. The company is uncertain about the potential popularity of the app and is not ready to commit to long-term infrastructure plans.
 
