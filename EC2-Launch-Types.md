@@ -8,7 +8,7 @@
 ## 1. On-Demand
 1. Pay for Compute capacity by the second with no long-term commitments.
 2. You decides when to launch, stop, hibernate,start, reboot or terminate it.
-Use cases: 
+## Use cases: 
 short-term, irregular workloads that cannot be interrupted
 
 ## 2. Reserved Instance
