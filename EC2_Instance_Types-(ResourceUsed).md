@@ -39,7 +39,7 @@ graphics processing or data pattern matching, more efficiency than is possible i
 • These are ideal for machine learning, high performance computing, computational fluid dynamics, computational finance, seismic analysis, 
 speech recognition, autonomous vehicles and drug discovery.
 
-## 6. HPC ( High Performance Work-loads )
+## 6. HPC ( High Performance Work-loads ) hpc family
 • High Performance Computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS.
 • HPC instances are ideal for applications that benefit from high-performance such as large, complex simulations and deep learning workloads.
 
