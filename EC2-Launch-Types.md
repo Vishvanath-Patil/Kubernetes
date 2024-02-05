@@ -1,9 +1,9 @@
 # EC2 Launch Types (Purchasing Options)
-## 1.On Demand 
-## 2.Reserved Instance
-## 3.Spot Instance
-## 4.Dedicated Host
-## 5.Dedicated Instance
+## 1. On Demand 
+## 2. Reserved Instance
+## 3. Spot Instance
+## 4. Dedicated Host
+## 5. Dedicated Instance
 
 ## 1. On-Demand
 1. Pay for Compute capacity by the second with no long-term commitments.
