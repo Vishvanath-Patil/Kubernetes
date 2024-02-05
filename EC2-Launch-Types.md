@@ -17,9 +17,9 @@ short-term, irregular workloads that cannot be interrupted
 3. Payment: All upfront, partial upfront, No-upfront
 4. Best Stable predictable workloads with long-term commitments
 ### 5. Types of Reserved Instances
-  ### Standard
-  ### Convirtible (can convert instance type)
-  ### Scheduled (can scheduled instance launch & termination)
+  ### 1. Standard
+  ### 2. Convirtible (can convert instance type)
+  ### 3. Scheduled (can scheduled instance launch & termination)
 ----------Senario----------
 
 Example:
