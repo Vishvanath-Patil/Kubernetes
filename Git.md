@@ -3,14 +3,16 @@
 Repositories in GIT contains a collection of files of various versions of a project.
 
 ## 1. Is GIT a centralised or distributed version control s/m  (VCS) ? what is the diff
+```shell
 ans:  distributed 
 In centralised VCS, you have client and server architecture & server is the remote repository which has all the copies of your code (ex: SVN ). But in distributed VCS every developer has all the versions of the code (gitlab, github,bitbucket). 
- 
+```
 ## 2. what are the GIT commands that you use to commit changes to your remote repository ?
+```shell
 Ans: git add
      git commit 
      git push
-
+```
 ## 3. what is the difference b/w git fetch and git pull ?
 Ans: git fetch: it only informs you about latest changes that are made to your remote repo, but it doesnot merge the changes to your local repository
 git pull also does the same but it will merge the changes to your local repository.
