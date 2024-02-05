@@ -1,5 +1,6 @@
-GIT
-# Repositories: Repositories in GIT contains a collection of files of various versions of a project.
+
+# Repositories: 
+Repositories in GIT contains a collection of files of various versions of a project.
 
 ## 1. Is GIT a centralised or distributed version control s/m  (VCS) ? what is the diff
 ans:  distributed 
