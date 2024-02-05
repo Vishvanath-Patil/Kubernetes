@@ -10,6 +10,33 @@
 2. You decides when to launch, stop, hibernate,start, reboot or terminate it.
 ## Use cases: 
 short-term, irregular workloads that cannot be interrupted
+-----------------Senario-------------------
+Example:
+
+Imagine a startup company that is in the early stages of developing and testing a new mobile application. The company is uncertain about the potential popularity of the app and is not ready to commit to long-term infrastructure plans.
+
+## Use Case:
+
+## Scenario with On-Demand Instances:
+
+**Variable Workload:** The startup's application experiences varying levels of traffic, especially during testing phases and promotional events.
+
+**No Upfront Commitment:** Given the uncertainty about future demand and usage patterns, the startup opts for On-Demand Instances.
+
+**Flexibility:** On-Demand Instances provide the flexibility to scale up or down based on current requirements. If the app gains sudden popularity, the startup can quickly add more instances to handle increased traffic.
+
+**Pay-as-You-Go Pricing:** The startup pays only for the compute capacity used without any upfront costs or long-term commitments. This aligns with the company's agile and cost-conscious approach in the early stages.
+
+## Benefits of On-Demand Instances:
+
+**Flexibility:** On-Demand Instances are ideal for workloads with variable demand, providing the ability to scale resources up or down as needed.
+
+**No Upfront Costs:** There are no upfront payments or commitments, making it suitable for projects with uncertain or changing requirements.
+
+**Quick Provisioning:** Instances can be provisioned rapidly, allowing the startup to respond promptly to changing business needs.
+
+**Cost-Efficient for Short-Term Projects:** On-Demand Instances are cost-effective for short-term projects, development, and testing where long-term commitments may not be appropriate.
+While On-Demand Instances offer flexibility, they may not be the most cost-effective option for long-term, stable workloads. In such cases, companies may explore other purchasing options like Reserved Instances for potential cost savings over time. The key is to choose the pricing model that aligns with the specific characteristics and goals of the workload.
 
 ## 2. Reserved Instance
 1. Provide Significant Discount (up to 72%) Compared to On-demand.
