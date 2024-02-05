@@ -138,8 +138,14 @@ Consider a financial institution that is subject to strict regulatory compliance
 ## Benefits of Dedicated Hosts:
 
 **Regulatory Compliance:** Ideal for industries with stringent regulatory requirements, such as finance, healthcare, or government, where physical isolation is necessary for compliance.
+
+
 **Isolation and Security:** Provides enhanced isolation and security by dedicating physical servers to a single customer, minimizing the risk of unauthorized access or interference from other tenants.
+
+
 **Control over Placement:** Offers control over the placement of instances on specific physical servers, allowing organizations to meet specific performance, security, and compliance requirements.
+
+
 **License Flexibility:** Useful for workloads that have licensing dependencies tied to physical servers, allowing organizations to bring their own licenses to the cloud.
 
 While Dedicated Hosts offer strong isolation and control, they might not be necessary for all workloads. They are typically chosen in scenarios where regulatory compliance or specific licensing requirements necessitate the use of dedicated physical hardware.
