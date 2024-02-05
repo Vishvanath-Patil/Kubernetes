@@ -5,6 +5,14 @@
 ## 4. Dedicated Host
 ## 5. Dedicated Instance
 
+## Overview of Instance types
+**On Demand:** Stay and leave whenever you want. (Hotel)
+**Reserved:** Plan to stay for long time and get discounts
+**Spot instances:** Stay for the night in cheap price, but can be thrown out when someone pays more than you.
+**Dedicated Host:** Book entire Building
+**Dedicated Instance:** Book a Room
+
+
 ## 1. On-Demand
 1. Pay for Compute capacity by the second with no long-term commitments.
 2. You decides when to launch, stop, hibernate,start, reboot or terminate it.
